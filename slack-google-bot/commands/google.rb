@@ -8,8 +8,8 @@ module SlackGoogleBot
         results = JSON.parse HTTP.get('https://www.googleapis.com/customsearch/v1',
                                       params: {
                                         q: expression,
-                                        key: ENV['GOOGLE_API_KEY'],
-                                        cx: ENV['GOOGLE_CSE_ID']
+                                        key: ENV['AIzaSyCZwjFXSUSyNEjixD3-zr67-VcHsqLsCUg'],
+                                        cx: ENV['004496796037465980484:brkjipulziw']
                                       })
         result = results['items'].first if results['items']
         if result
